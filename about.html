@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <style>
+        body{
+            background:white;
+            color:black;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin:0;
+            padding:0;
+        }
+        header .logo a{
+            display:inline-block;
+            background-color:red;
+            width:250px;
+            height:160px;
+            text-indent:-9999px;
+            background-image:url("logo.jpg");
+            background-size:250px;
+            background-repeat:no-repeat;
+            position:relative;
+            top:-40px
+        }
+        footer .FB a{
+            display:inline-block;
+            background-color:red;
+            width:50px;
+            height:50px;
+            text-indent:-9999px;
+            background-image:url("FB.jpg.png");
+            background-repeat:no-repeat;
+            background-size:50px;
+            
+        }
+        footer .IG a{
+            display:inline-block;
+            background-color:red;
+            width:50px;
+            height:49px;
+            text-indent:-9999px;
+            background-image:url("IG.jpg.png");
+            background-size:50px;
+            background-repeat:no-repeat;
+        }
+        footer .GM a{
+            display:inline-block;
+            background-color:red;
+            width:70px;
+            height:47px;
+            text-indent:-9999px;
+            background-image:url("Gmail.jpg");
+            background-size:70px;
+            margin-bottom:30px;
+            background-repeat:no-repeat;
+        }
+        footer .TW a{
+            display:inline-block;
+            background-color:red;
+            width:50px;
+            height:48px;
+            text-indent:-9999px;
+            background-image:url("TW.jpg");
+            background-size:50px;
+            background-repeat:no-repeat;
+        }
+        
+        header{
+            background:white;
+            padding:40px;
+            color:black;
+            }
+       
+        header a:hover{
+            text-decoration: underline;
+            color:red;
+            background-color: black;
+        
+        }
+        
+        ul{
+            margin:0;
+            padding:0;
+            list-style-type:none;
+        }
+        li{
+            display:inline-block;
+            margin-left:50px;
+        }
+        section {
+            background:black;
+            color:red;
+            padding:40px;
+            height:400px;
+        
+
+        }
+        .features{
+            background:rgb(8, 173, 238);
+            display:flex;
+            flex-direction:row;
+        }
+        .features figure{
+            margin:auto;
+            text-transform:uppercase;
+            text-align:center;
+        }
+        .features figure img{
+            width:500px;
+            height:400px;
+            border-radius:10%;
+            border:1px white;
+        }
+        .features figure button{
+            height:300px;
+            width:600px;
+            background-color:rgb(180, 225, 243);
+            border-radius:30px; 
+            font-size: larger;
+            text-align:center; 
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+              }
+        .About{
+            background:black;
+            display:flex;
+            flex-direction:row;
+            
+        }
+        .About figure img{
+            margin-top:100px;
+            height:300px;
+            width:280px;
+            border-radius:10%;
+            margin-left:30px;
+        }
+        .abt button{
+            font-size:large;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color:black;
+            color:white;
+            height:300px;
+            
+            
+            
+        }
+        
+
+
+
+        
+        footer{
+            background:white;;
+            color:black;
+            text-align:center;
+            height:100px;
+            padding-top: 40px;
+            
+            }
+        
+        
+            header a{
+            color:black;
+            text-decoration:none;
+            margin-top:100px;
+            margin-left:40px;
+            font-size: large;
+
+        }
+        
+
+     .wrapper{
+            outline: none;
+            position:absolute;
+            left:50%;
+            transform:translate(-40%,-50%);
+            width:100%;
+            padding:15px;
+            border-radius:5px;
+            max-width:550px;
+            display:flex;
+        
+        }
+        .wrapper .input{
+            width:100%;
+            height:100%;
+            padding:15px 20px;
+            border-radius:5px;
+            font-weight:bold;
+            margin-bottom:100px;
+
+        }
+        .searchbtn{
+            background:gray;
+            width:10%;
+            border-radius:5px;
+            position:relative;
+            cursor:pointer;
+            margin-bottom:100px;
+
+        }
+        .searchbtn .fas{
+            position:absolute;
+            top:30%;
+            margin-left:11px;
+        }
+        .btn-group button{
+            background-color:lightseagreen;
+            border:1px solid black;
+            color:black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding:10px 24px;
+            cursor:pointer;
+            width:150px;
+            text-align:center;
+            text-transform: uppercase;
+            display:block;
+            height:50px;
+        }
+        .btn-group{
+            margin-top:50px;
+        }
+        .btn-group button:not(:last-child){
+            border-bottom:none;
+        }
+        .btn-group button:hover{
+            background-color:blue;
+        }
+       .btn-group a{
+            text-decoration:none;
+        }
+        
+        @media screen and (max-width: 400px){
+            header{
+            background:rgb(69, 204, 186);
+            padding-right:100px;
+            height:450px;
+            padding-top:100px;
+            padding-left:0px;
+            display:flex;
+            flex-direction:column;
+            color:black;
+            
+            }
+            header a{
+            color:black;
+            text-decoration:none;
+            margin-top:30px;
+            margin-left:30px;
+            font-size: large;
+        }
+        header .logo a{
+            display:inline-block;
+            background-color:white;
+            width:195px;
+            height:130px;
+            text-indent:-9999px;
+            background-image:url("logo.jpg");
+            background-size:200px;
+            background-repeat:no-repeat;
+            position:relative;
+            top:-40px
+        }
+        .wrapper{
+            margin-top:500px;
+            margin-bottom:50px;
+            margin-right:7px;
+            display:block;
+            left:35%;
+            width:70%;
+            text-align:center;
+            
+        }
+        
+        
+        .wrapper .input{
+            width:100%;
+            height:100%;
+            padding:15px 20px;
+            border-radius:5px;
+            font-weight:bold;
+            margin-bottom:0px;
+
+        }
+        .searchbtn{
+            background:gray;
+            width:115%;
+            text-align:center;
+            height:35px;
+            border-radius:5px;;
+            margin-left:1px;
+            cursor:pointer;
+            margin-bottom:200px;
+            
+
+        }
+        .searchbtn .fas{
+            margin-bottom:300px;
+            
+        
+        }
+        .btn-group{
+            margin-left:55px;
+            margin-top:10px;
+        }
+        .About{
+            height:1290px;
+            display:block;
+            text-align:center;
+            padding:10px;
+            
+        }
+        .About figure img{
+            margin-top:30px;
+            height:300px;
+            width:280px;
+            border-radius:10%;
+            margin-left:10px;
+            margin-right:40px;
+        }
+        .abt button{
+            font-size:large;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color:black;
+            color:white;
+            height:600px;
+            margin-left:0px;
+            width:290px;
+            margin-right:30px;
+        
+            
+            
+            
+        }
+        .features{
+              height:750px;
+              display:block;
+              padding-top:30px;
+              padding-left:10px;
+        }
+        
+        .features figure{
+            text-transform:uppercase;
+            text-align:center;
+        }
+        .features figure img{
+            width:350px;
+            height:350px;
+            border-radius:10%;
+            border:1px white;
+            margin-right:10px;
+        }
+        footer{
+            background:white;
+            color:black;
+            text-align:center;
+            height:150px;
+            padding-top: 20px;
+            padding-right:40px;
+            
+            }
+        
+        
+
+        .features figure button{
+            height:400px;
+            width:350px;
+            background-color:rgb(180, 225, 243);
+            border-radius:30px; 
+            font-size: larger;
+            text-align:center;
+            border:none;
+            margin-right:10px; 
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+              }
+        
+        }
+        @media screen and (max-width: 320px){
+            header{
+                width:280px;
+                text-align:center;
+            
+            }
+            header a{
+                margin-top:20px;
+            
+            }
+            .wrapper{
+            margin-top:450px;
+            margin-bottom:50px;
+            margin-right:0px;
+            margin-left:25px;
+            display:block;
+            left:35%;
+            width:70%;
+            text-align:center;
+            
+        }
+        
+        
+        .wrapper .input{
+            width:100%;
+            height:100%;
+            padding:15px 20px;
+            border-radius:5px;
+            font-weight:bold;
+            margin-bottom:0px;
+
+        }
+        .searchbtn{
+            background:gray;
+            width:265px;
+            text-align:center;
+            height:35px;
+            border-radius:5px;;
+            margin-left:1px;
+            cursor:pointer;
+            margin-bottom:200px;
+            
+
+        }
+        .searchbtn .fas{
+            margin-bottom:300px;
+            
+        
+        }
+        .About{
+            width:360px;
+        }
+        .features{
+            width:330px;
+        }
+        .features figure{
+            text-transform:uppercase;
+            text-align:center;
+        }
+        .features figure button{
+            margin-left:5px;
+        }
+        .features figure img{
+            width:350px;
+            height:350px;
+            border-radius:10%;
+            border:1px white;
+            margin-right:15px;
+            margin-left:7px;
+        }
+        footer{
+            background-color: white;
+            color:black;
+            text-align:center;
+            height:150px;
+            width:340px;
+            padding-top: 20px;
+            padding-right:40px;
+            
+            }
+        
+
+        
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            <li class="logo"><a href="index.html">Logo</a></li>
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="about.html"><b>About us</b></a></li>
+            <li><a href="service.html"><b>Services</b></a></li>
+            <li><a href="image.html"><b>Image gallery</b></a></li>
+            <li><a href="contact.html"><b>Contact us</b></a></li>
+            <li><a href="donation.html"><b>Donations</b></a></li>
+            </ul>
+        </nav>
+        <div class="wrapper">
+            <input type="text" class="input" placeholder="what are you looking for?">
+            <div class="searchbtn">
+                <i class="fas fa-search"></i>
+            </div>
+            
+        </div>
+    </header>
+    <section class="About"> 
+    <figure>
+      <div class="btn-group">*
+           <a href="over.html"><button><b>Overview</b></button></a>
+           <a href="vision.html"><button><b>Vision</b></button></a>
+           <a href="mission.html"><button><b>Mission</b></button></a>
+           <a href="belief.html"><button><b>Belief</b></button></a>
+           <a href="trustee.html"> <button><b>Trustees</b></button></a>
+      </div>
+      </figure>
+      <figure class="abt">
+          <button><b>ABOUT US<br/><br/><b>OVERVIEW</b><br/>As we all kow that Covid-19 pandemic has brought a major setback in our lives.<br/>
+        Many people have lost their jobs which is their basic means of livlihood.Schools and<br/>colleges have shut down which has caused major hinderance in the learning path of<br/>
+    students and has brought negative impact on the health of people.HFH(Habitat for humanity) is an organization that aims at providing employment to needy<br/>citizens,
+    free online education to student in various field and healthcare<br/> to people during covid-19 pandemic. </button>
+      </figure>
+      <figure>
+          <img src="pic10.jpg">
+      </figure>
+    </section>
+    <section class="features">
+        <figure>
+            <img src="HFHIMap2018.jpg.png" alt="map">
+            <figcaption>Our Reach</figcaption>
+        </figure>
+        <figure>
+            <button>HFH(Habitat of humanity) is an organization that aims at providing employment to needy citizens,
+                free online education to student in various field and healthcare to people during covid-19 pandemic.<br/>
+                <br/><b>70 COUNTRIES</b><br/><br/><b>600+ PROJECTS</b>
+            </button>
+        </figure>
+
+    </section>
+    <footer>
+        <nav>
+            <ul>
+                <li class="FB"><a href="https://www.facebook.com/habitat/">FB</a></li>
+                <li class="IG"><a href="https://www.instagram.com/habitatforhumanity/?hl=en">IG</a></li>
+                <li class="GM"><a href="https://mail.google.com/mail/u/0/#inbox">GM</a></li>
+                <li class="TW"><a href="https://twitter.com/habitatindia?lang=en#:~:text=Habitat%20for%20Humanity%20(%40habitatindia)%20%7C%20Twitter">TW</a></li>
+            </ul>
+        </nav>
+    </footer>         
+</body>
+ </html>
